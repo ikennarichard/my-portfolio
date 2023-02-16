@@ -28,9 +28,11 @@ body {
 
 h1 {
     font-size: 2.5rem;
-    width: fit-content;
+    width: 90%;
     color: var(--space-cadet);
     line-height: 52px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 
@@ -46,7 +48,7 @@ main {
     height: 768px;
     display: flex;
     flex-direction: column;
-    gap: 68px;
+    gap: 60px;
 }
 
 
@@ -70,9 +72,13 @@ h3 {
 }
 
 
-.headline_section {
+
+.headline_paragraph {
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+    font-size: 1.25rem;
+    padding-inline: .2em;
+    color: var(--space-cadet);
+    width: 90%;
+    margin-inline: auto;
+    line-height: 28px;
 }
