@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+
+
+:root {
+    --black-leather-jacket: #28352F;
+    --space-cadet: #172B4D;
+    --mint: #36B37E;
+    /* down arrow styles */
+    --crayola: #ACB7C3;
+    --platinum: #DFE1E6;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid; */
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;;
+}
+
+
+h1 {
+    font-size: 2.5rem;
+    width: 90%;
+    color: var(--space-cadet);
+    line-height: 52px;
+    text-align: center;
+    margin-block-start: 1em;
+}
+
+
+.heading_span {
+    color: var(--mint);
+}
+
+
+main {
+    background: url('./img/header-illsutration-mobile.svg') no-repeat center;
+    /* background-position-y: -1%; */
+    width: 90%;
+    height: 768px;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    align-items: center;
+}
+
+
+header {
+    display: flex;
+    gap: 200px;
+    padding-inline: 1.5em;
+    margin-top: 15px;
+}
+
+
+.hamburger_icon {
+    width: fit-content;
+}
+
+
+h3 {
+    color: var(--black-leather-jacket);
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+
+
+.headline_paragraph {
+    text-align: center;
+    font-size: 1.25rem;
+    padding-inline: .2em;
+    color: var(--space-cadet);
+    line-height: 28px;
+}
+
+
+.social_links {
+    margin-top: -2px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+}
+
+
+.next_button {
+    appearance: none;
+    background: none;
+    width: 90%;
+    border: none;
+    outline: none;
+
+}
+
+
+.next_button > img {
+    border-radius: 50%;
+    padding: 1.2em;
+    border: 1px solid var(--platinum);
+    cursor: pointer;
+}
+
+
+
+@media (min-width: 768px) {
+
+    header {
+        gap: 150px;
+    }
+
+    main {
+        background: url('./img/header-llustration-desktop.svg') no-repeat center;
+        background-size: cover;
+        background-position-y: -50px;
+        gap: 32px;
+    }
+}
