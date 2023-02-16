@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    padding: 15px;
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+main {
+    background: url('./img/header-illsutration-mobile.svg') repeat-x;
+    padding: 10px;
+    width: 375px;
+}
