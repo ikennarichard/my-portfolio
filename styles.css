@@ -69,7 +69,7 @@ h3 {
 .headline_paragraph {
   text-align: center;
   font-size: 1.25rem;
-  padding-inline: 0.2em;
+  padding-inline: 1em;
   color: var(--space-cadet);
   line-height: 28px;
 }
