@@ -42,9 +42,7 @@ h1 {
 main {
   background: url('./img/header-illsutration-mobile.svg') no-repeat center;
 
-  /* background-position-y: -1%; */
-  width: 90%;
-  height: 768px;
+  background-position-y: 60px;
   display: flex;
   flex-direction: column;
   gap: 45px;
@@ -83,6 +81,10 @@ h3 {
   align-items: flex-end;
 }
 
+.social_links > img {
+  cursor: pointer;
+}
+
 .next_button {
   appearance: none;
   background: none;
@@ -108,5 +110,10 @@ h3 {
     background-size: cover;
     background-position-y: -50px;
     gap: 32px;
+  }
+
+  .headline_paragraph {
+    width: 70%;
+    padding-inline: 2em;
   }
 }
