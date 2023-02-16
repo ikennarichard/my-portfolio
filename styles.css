@@ -41,7 +41,6 @@ h1 {
 
 main {
   background: url('./img/header-illsutration-mobile.svg') no-repeat center;
-
   background-position-y: 60px;
   display: flex;
   flex-direction: column;
