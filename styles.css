@@ -6,13 +6,10 @@
   --mint: #36b37e;
   --crayola: #acb7c3;
   --platinum: #dfe1e6;
-  /* cards */
   --light-gray:#D0D9D4;
   --bright-gray: #EBF0EE;
   --arsenic: #3A4A42;
-  /* about me */
   --independence: #42526E;
-  /* skills, fw, lang heading */
   --police-blue: #344563;
 
 }
@@ -115,7 +112,7 @@ h3 {
   border: 1px solid var(--platinum);
   cursor: pointer;
 }
-/* work and about me section */
+
 .work_section {
   display: grid;
   place-items: center;
@@ -139,7 +136,7 @@ h3 {
   margin-block-start: 8px;
   background-color: var(--mint);
 }
-/* project cards */
+
 .card {
   width: 327px;
   background: var(--bright-gray);
@@ -200,7 +197,6 @@ h3 {
   border-radius: 4px;
 }
 
-/* About me */
 .about_me {
   display: flex;
   flex-direction: column;
