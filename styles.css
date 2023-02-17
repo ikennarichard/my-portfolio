@@ -10,6 +10,8 @@
   --light-gray:#D0D9D4;
   --bright-gray: #EBF0EE;
   --arsenic: #3A4A42;
+  /* about me */
+  --independence: #42526E;
 
 }
 
@@ -122,7 +124,7 @@ h3 {
   font-size: 2.5rem;
   width: 70%;
   text-align: center;
- 
+  color: var(--space-cadet);
 }
 
 .line {
@@ -192,6 +194,54 @@ h3 {
   background-color: var(--mint);
   color: white;
   padding: 0.75em;
+  border-radius: 4px;
+}
+
+/* About me */
+.about_me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  gap: 10px;
+  overflow: hidden;
+  padding-block: 1em;
+}
+
+.about_me h2{
+  margin-block-start: 20px;
+  margin-inline-start: 1em;
+  color: var(--space-cadet);
+}
+
+.aboutme_text {
+  width: 75%;
+  line-height: 32px;
+  color: var(--independence);
+}
+
+.illus1, .illus2 {
+  position: absolute;
+}
+
+.illus1 {
+  top: -20px;
+  right: 0;
+}
+
+.illus2 {
+  bottom: 0;
+  left: 0;
+}
+
+.resume {
+  appearance: none;
+  text-decoration: none;
+  background-color: var(--mint);
+  color: white;
+  padding: .75em;
   border-radius: 4px;
 }
 
