@@ -161,7 +161,7 @@ h3 {
   padding: 1em;
 }
 
-.project_details b {
+.project_details h4 {
   color: var(--arsenic);
   text-align: center;
   line-height: 32px;
@@ -197,6 +197,8 @@ h3 {
 }
 
 .about_me {
+  background: url('./img/illustration-1-about-me-mobile.svg') no-repeat 10px, url('./img/illustration-2-about-me-mobile.svg') no-repeat;
+  background-position: top -30px right, bottom left;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -212,6 +214,7 @@ h3 {
   margin-block-start: 20px;
   margin-inline-start: 1em;
   color: var(--space-cadet);
+  font-size: 2.5rem;
 }
 
 .aboutme_text {
