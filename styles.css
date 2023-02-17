@@ -112,7 +112,7 @@ h3 {
   cursor: pointer;
 }
 /* work and about me section */
-.work_and_aboutme {
+.work_section {
   display: grid;
   place-items: center;
   gap: 30px;
