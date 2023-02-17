@@ -186,6 +186,15 @@ h3 {
   font-size: 0.75rem;
 }
 
+.see_project {
+  margin: auto 0;
+  text-decoration: none;
+  background-color: var(--mint);
+  color: white;
+  padding: 0.75em;
+  border-radius: 4px;
+}
+
 
 @media (min-width: 768px) {
   header {
