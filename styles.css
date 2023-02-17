@@ -141,6 +141,7 @@ h3 {
   border: 1px solid var(--light-gray);
   border-radius: 8px;
   padding-inline: .3px;
+  padding-bottom: .3px;
 }
 
 .project_image {
