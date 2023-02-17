@@ -307,7 +307,6 @@ h3 {
 .list > ul {
   display: flex;
   gap: 6px;
-  border: 1px solid;
   justify-items: center;
   align-items: center;
 }
@@ -325,6 +324,14 @@ h3 {
   font-size: 0.75rem;
   width: fit-content;
   letter-spacing: 0.03em;
+}
+
+.call_to_action {
+  font-size: 2.5rem;
+  text-align: center;
+  color: var(--space-cadet);
+  padding-inline: 30px;
+  background-color: white;
 }
 
 
