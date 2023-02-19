@@ -370,6 +370,23 @@ textarea {
   cursor: pointer;
 }
 
+footer {
+  margin-block-start: 2.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding-block-end: 4em;
+}
+
+address > a {
+  appearance: none;
+  font-style: normal;
+  color: var(--independence);
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
 @media (min-width: 768px) {
   header {
     gap: 150px;
