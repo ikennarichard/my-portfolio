@@ -387,6 +387,14 @@ address > a {
   text-decoration: none;
 }
 
+.footer_line{
+  width: 100px;
+  height: 5px;
+  background: var(--maastricht-blue);
+  border-radius: 4em;
+  margin-bottom: 15px;
+}
+
 @media (min-width: 768px) {
   header {
     gap: 150px;
