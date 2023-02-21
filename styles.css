@@ -246,7 +246,7 @@ h3 {
   gap: 20px;
 }
 
-.lang_fw_skills li {
+.lang_fw_skills > li {
   display: flex;
   flex-direction: column;
   background: var(--bright-gray);
@@ -255,6 +255,7 @@ h3 {
   list-style-type: none;
   padding-block-start: 1.5em;
   width: 327px;
+  height: 325px;
 }
 
 .languages {
@@ -281,6 +282,7 @@ h3 {
   flex-direction: column;
   align-items: center;
   gap: 60px;
+  height: 352px;
 }
 
 .list {
@@ -472,8 +474,13 @@ address > a {
     font-size: 0.938rem;
   }
 
-  .recent_works {
-    grid-area: title;
+  .lang_fw_skills {
+    flex-direction: row;
+  }
+  
+  .lang_fw_skills > li {
+    width: auto;
+    padding-inline: 1em;
   }
 
   .card {
@@ -481,6 +488,19 @@ address > a {
   }
 
   .about_me {
-    background-color: white;
+    background: url('./img/illustration-about me-1-desktop.svg') no-repeat 10px, url('./img/illustration-about-me-2-desktop.svg') no-repeat;
+    background-position: top -50px right, bottom left;
+  }
+
+  .aboutme_text {
+    width: 65%;
+  }
+
+  .call_to_action {
+    float: left;
+  }
+
+  .contact_form {
+    float: right;
   }
 }
