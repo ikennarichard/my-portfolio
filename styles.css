@@ -414,7 +414,7 @@ address > a {
   }
 
   main {
-    background: url('./img/header-llustration-desktop.svg') repeat-y center;
+    background: url('./img/header-llustration-desktop.svg') no-repeat center;
     background-position-y: -50px;
     gap: 32px;
     max-width: 1040px;
