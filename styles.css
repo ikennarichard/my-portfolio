@@ -417,6 +417,15 @@ address > a {
 }
 
 @media (min-width: 768px) {
+  body {
+    background-image:url('./img/illustration-1-contact-form-desktop.svg'), url('./img/illustration-2-contact-form-desktop.svg'), url('./img/contact-form-illustratoin-3-desktop.svg');
+    background-size: 100px;
+  }
+
+  address {
+    display: none;
+  }
+
   header {
     gap: 150px;
   }
