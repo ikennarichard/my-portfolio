@@ -448,6 +448,30 @@ address > a {
     margin-block-start: 30em;
   }
 
+  header {
+    display: none;
+  }
+
+  nav {
+    margin-block-start: 1em;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  nav li {
+    list-style-type: none;
+  }
+
+  nav li a {
+    text-decoration: none;
+    color: var(--police-blue);
+    font-size: 0.938rem;
+  }
+
   .recent_works {
     grid-area: title;
   }
