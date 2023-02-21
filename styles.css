@@ -320,6 +320,12 @@ h3 {
   letter-spacing: 0.03em;
 }
 
+.container {
+  display: grid;
+  place-items: center;
+  gap: 50px;
+}
+
 .call_to_action {
   font-size: 2.5rem;
   text-align: center;
@@ -496,11 +502,25 @@ address > a {
     width: 65%;
   }
 
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline-end: 2em;
+    gap: 1px;
+  }
+
   .call_to_action {
-    float: left;
+    flex-basis: 0;
+    flex-grow: 1;
   }
 
   .contact_form {
-    float: right;
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+
+  .form_btn {
+    align-self: flex-start;
   }
 }
