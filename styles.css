@@ -14,6 +14,7 @@
   --ocean-green: #60C095;
   --slate-gray: #6B778C;
   --maastricht-blue: #091E42;
+  --spanish-viridian: #008552;
 }
 
 * {
@@ -371,6 +372,15 @@ textarea {
   line-height: 24px;
   font-size: 1.063rem;
   cursor: pointer;
+}
+
+.form_btn:hover {
+  filter: drop-shadow(0 2px 4px var(--mint));
+}
+
+.form_btn:active {
+  background-color: var(--spanish-viridian);
+  filter: none;
 }
 
 footer {
