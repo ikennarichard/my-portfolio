@@ -417,11 +417,11 @@ address > a {
     background: url('./img/header-llustration-desktop.svg') no-repeat center;
     background-position-y: -50px;
     gap: 32px;
-    max-width: 1040px;
   }
 
   .headline_section {
     background: none;
+    margin-block-start: 3em;
   }
 
   h3 {
@@ -431,6 +431,23 @@ address > a {
   .headline_paragraph {
     width: 70%;
     padding-inline: 2em;
+  }
+
+  .work_section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1029px;
+    gap: 15px;
+    margin-block-start: 30em;
+  }
+
+  .recent_works {
+    grid-area: title;
+  }
+
+  .card {
+    width: auto;
   }
 
   .about_me {
