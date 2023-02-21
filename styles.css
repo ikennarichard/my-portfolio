@@ -37,7 +37,6 @@ main {
   display: grid;
   place-items: center;
   gap: 50px;
-
 }
 
 .heading > a {
