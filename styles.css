@@ -28,12 +28,16 @@ body {
   place-items: center;
   min-height: 100vh;
   font-family: 'Inter', sans-serif;
+  background-image: url('./img/illustration-contact-form.svg');
+  background-repeat: no-repeat;
+  background-position:bottom 120px right;
 }
 
 main {
   display: grid;
   place-items: center;
   gap: 50px;
+
 }
 
 .heading > a {
