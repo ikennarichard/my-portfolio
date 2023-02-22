@@ -420,7 +420,8 @@ address > a {
   margin-bottom: 15px;
 }
 
-@media (min-width: 768px) {
+
+@media (min-width: 1440px) {
   body {
     background-image:url('./img/illustration-1-contact-form-desktop.svg'), url('./img/illustration-2-contact-form-desktop.svg'), url('./img/contact-form-illustratoin-3-desktop.svg');
     background-size: 100px;
@@ -438,7 +439,6 @@ address > a {
     background: url('./img/header-llustration-desktop.svg') no-repeat center;
     background-size: 100%;
     background-position-y: 0;
-    gap: 32px;
     max-width: 1440px;
   }
 
@@ -448,13 +448,13 @@ address > a {
 
   .headline_section h3 {
     background: none;
-    margin-block-start: 4.5em;
+    margin-block-start: 3em;
     gap: 24px;
   }
 
   .headline_paragraph {
     width: 60%;
-    margin-block-start: -2em;
+    margin-block-start: -1em;
   }
 
   .next_button {
@@ -464,10 +464,19 @@ address > a {
   .work_section {
     display: flex;
     flex-wrap: wrap;
+    border: 1px solid;
     justify-content: center;
-    width: 1000px;
-    gap: 15px;
-    margin-block-start: 15em;
+    max-width: 1171px;
+    gap: 24px;
+    margin-block-start: 29em;
+  }
+
+  .card {
+    width: 369px;
+  }
+
+  .recent_works {
+    flex: 0 0 100%;
   }
 
   header {
@@ -501,15 +510,13 @@ address > a {
     max-width: 1171px;
     flex-wrap: wrap;
     justify-content: center;
+    border: 1px solid;
+    padding: 4px 8px;
   }
   
   .lang_fw_skills > li {
-    /* width: auto; */
     padding-inline: 1em;
-  }
-
-  .card {
-    width: auto;
+    width: 369px;
   }
 
   .about_me {
@@ -518,12 +525,11 @@ address > a {
   }
 
   .aboutme_text {
-    width: 65%;
+    width: 60%;
   }
 
   .container {
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 1px;
     border: 1px solid;
@@ -538,6 +544,7 @@ address > a {
   .contact_form {
     flex-basis: 0;
     flex-grow: 1;
+    margin-block-start: 1em;
   }
 
   .form_btn {
