@@ -447,7 +447,7 @@ hr {
 
   nav li {
     list-style-type: none;
-    padding: 10px 12px;
+    padding: 10px 4px;
     font-weight: 600;
   }
 
@@ -458,21 +458,30 @@ hr {
   }
 
   main {
-    background: url('./img/header-illsutration-mobile.svg') no-repeat center;
-    background-position-y: 35px;
+    background: url('./img/header-llustration-desktop.svg') no-repeat center;
+    background-position-y: 0;
+    background-size: 1100px;
   }
 
   .headline_section {
     background: none;
   }
 
-  h3 {
-    margin-block-start: 2.8em;
+  .headline_section h3 {
+    margin-block-start: 8%;
   }
 
   .headline_paragraph {
-    width: 60%;
-    margin-block-start: -.75em;
+    width: 70%;
+    margin-block-start: -1.7em;
+  }
+
+  .social_links {
+    margin-block-start: -2em
+  }
+
+  .next_button {
+    margin-block-start: -1em;
   }
 
   .about_me {
@@ -488,7 +497,7 @@ hr {
     flex-wrap: wrap;
     justify-content: center;
     gap: 24px;
-    margin-block-start: 12em;
+    margin-block-start: 20em;
   }
 
   .lang_fw_skills {
@@ -510,7 +519,33 @@ hr {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1060px) {
+
+  main {
+    background-size: 100%;
+  }
+
+  .headline_section h3 {
+    margin-block-start: 8%;
+  }  
+
+  .headline_paragraph {
+    width: 60%;
+  }
+
+  .work_section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    margin-block-start: 22em;
+  }
+
+  .recent_works {
+    grid-column: 1 / span 3;
+  }
+}
+
+@media (min-width: 1174px) {
   address {
     display: none;
   }
@@ -545,8 +580,8 @@ hr {
   }
 
   .work_section {
-    max-width: 1171px;
-    margin-block-start: 29em;
+    width: 1171px;
+    margin-block-start: 36%;
   }
 
   .card {
@@ -583,7 +618,7 @@ hr {
     display: flex;
     align-items: center;
     gap: 1px;
-    width: 1171px;
+    max-width: 1171px;
   }
 
   .call_to_action {
