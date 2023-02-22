@@ -67,6 +67,10 @@ header {
   margin-top: 15px;
 }
 
+nav {
+  display: none;
+}
+
 .hamburger_icon {
   width: fit-content;
 }
@@ -435,6 +439,7 @@ address > a {
     background-size: 100%;
     background-position-y: 0;
     gap: 32px;
+    max-width: 1440px;
   }
 
   .headline_section {
@@ -443,26 +448,26 @@ address > a {
 
   .headline_section h3 {
     background: none;
-    margin-block-start: 1em;
+    margin-block-start: 4.5em;
+    gap: 24px;
   }
 
   .headline_paragraph {
-    width: 70%;
-    padding-inline: 2em;
-    margin-block-start: -.75em;
+    width: 60%;
+    margin-block-start: -2em;
   }
 
-  .social_links {
-    margin-block-start: -1.5em;
+  .next_button {
+    margin-block-start: 3em;
   }
 
   .work_section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 1029px;
+    width: 1000px;
     gap: 15px;
-    margin-block-start: 30em;
+    margin-block-start: 15em;
   }
 
   header {
@@ -470,7 +475,7 @@ address > a {
   }
 
   nav {
-    margin-block-start: 1em;
+    display: block;
   }
 
   nav ul {
@@ -481,6 +486,8 @@ address > a {
 
   nav li {
     list-style-type: none;
+    padding: 10px 12px;
+    font-weight: 600;
   }
 
   nav li a {
@@ -491,10 +498,13 @@ address > a {
 
   .lang_fw_skills {
     flex-direction: row;
+    max-width: 1171px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   
   .lang_fw_skills > li {
-    width: auto;
+    /* width: auto; */
     padding-inline: 1em;
   }
 
@@ -515,8 +525,9 @@ address > a {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-inline-end: 2em;
     gap: 1px;
+    border: 1px solid;
+    width: 1171px;
   }
 
   .call_to_action {
