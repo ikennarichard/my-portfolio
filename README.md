@@ -50,6 +50,8 @@ Hello welcome to my **[Portfolio]**, here you'll find details about me and some 
 
 - Toolbar section
 - Healine sections
+- About me
+- Contact Form
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -131,6 +133,9 @@ Example:
 
 - GitHub: [ikennarichard](https://github.com/ikennarichard)
 - Twitter: [@ikennarichard_](https://twitter.com/ikennarihard_)
+
+👤 **Author2**
+- GitHub: [aima](https://github.com/aima98)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
