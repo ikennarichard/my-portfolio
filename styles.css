@@ -459,7 +459,7 @@ hr {
 
   main {
     background: url('./img/header-illsutration-mobile.svg') no-repeat center;
-    background-position-y: 60px;
+    background-position-y: 35px;
   }
 
   .headline_section {
@@ -467,12 +467,12 @@ hr {
   }
 
   h3 {
-    margin-block-start: -2px;
+    margin-block-start: 2.8em;
   }
 
   .headline_paragraph {
-    width: 70%;
-    padding-inline: 2em;
+    width: 60%;
+    margin-block-start: -.75em;
   }
 
   .about_me {
@@ -511,7 +511,6 @@ hr {
 }
 
 @media (min-width: 1440px) {
-
   address {
     display: none;
   }
