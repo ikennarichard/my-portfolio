@@ -49,16 +49,20 @@ address > a {
 }
 
 .heading {
-  animation: 1s alternate rotate;
+  animation: 2s alternate-reverse rotate;
 }
 
 @keyframes rotate {
   50% {
-    transform: rotate(-90deg);
+    transform: translate(-20px);
+  }
+
+  70% {
+    transform: translate(50px);
   }
 
   100% {
-    transform: rotate(360deg);
+    transform: translate(-50px);
   }
 }
 
