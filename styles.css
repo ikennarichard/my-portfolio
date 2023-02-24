@@ -49,7 +49,7 @@ address > a {
 }
 
 .heading {
-  animation:  1s alternate rotate;
+  animation: 1s alternate rotate;
 }
 
 @keyframes rotate {
@@ -57,7 +57,7 @@ address > a {
     transform: rotate(-90deg);
   }
 
-   100% {
+  100% {
     transform: rotate(360deg);
   }
 }
@@ -408,7 +408,7 @@ textarea:focus {
   line-height: 24px;
   font-size: 1.063rem;
   cursor: pointer;
-  transition: filter .3s;
+  transition: filter 0.3s;
   transition-timing-function: ease-out;
 }
 
