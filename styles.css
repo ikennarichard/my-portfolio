@@ -57,7 +57,7 @@ address > a {
     transform: rotate(-90deg);
   }
 
-  100% {
+   100% {
     transform: rotate(360deg);
   }
 }
@@ -408,12 +408,12 @@ textarea:focus {
   line-height: 24px;
   font-size: 1.063rem;
   cursor: pointer;
-  transition: filter 1s;
+  transition: filter .3s;
   transition-timing-function: ease-out;
 }
 
 .form_btn:hover {
-  filter: drop-shadow(0 2px 4px var(--mint));
+  filter: drop-shadow(0 2px 2px var(--mint));
 }
 
 .form_btn:active {
