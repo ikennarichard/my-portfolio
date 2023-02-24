@@ -48,20 +48,6 @@ address > a {
   text-decoration: none;
 }
 
-.heading {
-  animation: 1s alternate rotate;
-}
-
-@keyframes rotate {
-  50% {
-    transform: rotate(-90deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 .heading > a {
   text-decoration: none;
   color: var(--black-leather-jacket);
@@ -408,12 +394,14 @@ textarea:focus {
   line-height: 24px;
   font-size: 1.063rem;
   cursor: pointer;
-  transition: filter 0.3s;
+  transition: filter 0.3s, background-color 0.3s ease-in, color 0.3s ease-out;
   transition-timing-function: ease-out;
 }
 
 .form_btn:hover {
-  filter: drop-shadow(0 2px 2px var(--mint));
+  filter: drop-shadow(0 2px 2px var(--maastricht-blue));
+  background-color: var(--bright-gray);
+  color: var(--maastricht-blue);
 }
 
 .form_btn:active {
