@@ -48,6 +48,20 @@ address > a {
   text-decoration: none;
 }
 
+.heading {
+  animation: 1s alternate rotate;
+}
+
+@keyframes rotate {
+  50% {
+    transform: rotate(-90deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .heading > a {
   text-decoration: none;
   color: var(--black-leather-jacket);
