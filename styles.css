@@ -408,6 +408,8 @@ textarea:focus {
   line-height: 24px;
   font-size: 1.063rem;
   cursor: pointer;
+  transition: filter 1s;
+  transition-timing-function: ease-out;
 }
 
 .form_btn:hover {
