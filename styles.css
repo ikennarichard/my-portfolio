@@ -101,7 +101,7 @@ nav {
   width: fit-content;
 }
 
-h3 {
+h2 {
   font-size: 2.5rem;
   width: 90%;
   color: var(--space-cadet);
@@ -247,7 +247,7 @@ h3 {
   padding-block: 1em;
 }
 
-.about_me h2 {
+.about_me h3 {
   margin-block-start: 20px;
   margin-inline-start: 1em;
   color: var(--space-cadet);
@@ -491,7 +491,7 @@ hr {
     background: none;
   }
 
-  .headline_section h3 {
+  .headline_section h2 {
     margin-block-start: 8%;
   }
 
@@ -548,10 +548,6 @@ hr {
     background-size: 100%;
   }
 
-  .headline_section h3 {
-    margin-block-start: 8%;
-  }
-
   .headline_paragraph {
     width: 60%;
   }
@@ -587,7 +583,7 @@ hr {
     background: none;
   }
 
-  .headline_section h3 {
+  .headline_section h2 {
     background: none;
     margin-block-start: 3em;
     gap: 24px;
