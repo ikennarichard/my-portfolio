@@ -198,7 +198,7 @@ h2 {
   padding: 1em;
 }
 
-.project_details h4 {
+.project_details h2 {
   color: var(--arsenic);
   text-align: center;
   line-height: 32px;
