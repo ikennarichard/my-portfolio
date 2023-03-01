@@ -107,15 +107,8 @@ run "npx stylelint "**/*.{css,scss}" --fix" to fix linters `
 
 ### Deployment
 
-You can deploy this project using:
+GitHub Pages
 
-<!--
-Example:
-
-```sh
-
-```
- -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
