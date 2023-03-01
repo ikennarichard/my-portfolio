@@ -198,9 +198,12 @@
     
             <div class="contact_form">
                 <form action="https://formspree.io/f/xbjeoyol" method="post">
-                    <input type="text" placeholder="Full name" name="fullname" maxlength="30" required>
-                    <input type="email" placeholder="Email Address" name="email" required>
-                    <textarea name="message" placeholder="Enter text here" maxlength="500" required></textarea>
+                    <label for="fullname" hidden>Fullname</label>
+                    <input id="fullname" type="text" placeholder="Full name" name="fullname" maxlength="30" required>
+                    <label for="email" hidden>Email</label>
+                    <input id="email" type="email" placeholder="Email Address" name="email" required>
+                    <label for="message" hidden>Message</label>
+                    <textarea id="message" name="message" placeholder="Enter text here" maxlength="500" required></textarea>
                     <button class="form_btn">Get in touch</button>
                 </form>
             </div>
