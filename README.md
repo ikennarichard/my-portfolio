@@ -86,14 +86,11 @@ Clone this repository to your desired folder:
 
 Install this project with:
 
-<!--
 Example command:
 
-```sh
-  cd my-project
-  gem install
-```
---->
+`
+node.js V16 and above
+`
 
 ### Usage
 
@@ -103,13 +100,10 @@ Once you have the live server extension, you need the click on the __Go Live__ i
 
 To run tests, run the following command:
 
-<!--
 Example command:
 
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
+`
+run "npx stylelint "**/*.{css,scss}" --fix" to fix linters `
 
 ### Deployment
 
