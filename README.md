@@ -124,11 +124,19 @@ GitHub Pages
 👤 **Author2**
 - GitHub: [aima](https://github.com/aima98)
 
+👤 **Author3**
+- GitHub: [branbayou](https://github.com/BranBayou)
+
+👤 **Author4**
+- GitHub: [otega](https://github.com/Otegaa)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
+- add linters for other languages
+- integrate more dynamic styles with css frameworks
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

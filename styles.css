@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
 
 :root {
   --black-leather-jacket: #28352f;
@@ -6,6 +6,7 @@
   --mint: #36b37e;
   --crayola: #acb7c3;
   --platinum: #dfe1e6;
+  --light-platinum: #e5e5e5;
   --light-gray: #d0d9d4;
   --bright-gray: #ebf0ee;
   --arsenic: #3a4a42;
@@ -28,10 +29,11 @@ body {
   flex-direction: column;
   place-items: center;
   min-height: 100vh;
-  font-family: 'Inter', sans-serif;
-  background-image: url('./img/illustration-contact-form.svg');
+  font-family: "Inter", sans-serif;
+  background-image: url("./img/illustration-contact-form.svg");
   background-repeat: no-repeat;
   background-position: bottom 120px right;
+  position: relative;
 }
 
 main {
@@ -49,28 +51,7 @@ address > a {
 }
 
 .heading {
-  animation: 2s alternate-reverse rotate;
-}
-
-@keyframes rotate {
-  50% {
-    transform: translate(-20px);
-  }
-
-  70% {
-    transform: translate(50px);
-  }
-
-  100% {
-    transform: translate(-50px);
-  }
-}
-
-.heading > a {
-  text-decoration: none;
-  color: var(--black-leather-jacket);
-  font-weight: 600;
-  font-size: 1.25rem;
+  animation: moveInLeft 2s ease-in-out;
 }
 
 .heading_span {
@@ -78,7 +59,7 @@ address > a {
 }
 
 .headline_section {
-  background: url('./img/header-illsutration-mobile.svg') no-repeat center;
+  background: url("./img/header-illsutration-mobile.svg") no-repeat center;
   background-position-y: 60px;
   display: flex;
   flex-direction: column;
@@ -94,11 +75,67 @@ header {
 }
 
 nav {
-  display: none;
+  visibility: visible;
+  overflow: hidden;
+  width: 0%;
+  height: 100%;
+  background-color: var(--light-platinum);
+  position: absolute;
+  z-index: 1;
+  transition: width 0.3s ease-in-out;
+}
+
+.show_menu {
+  visibility: visible;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  border-radius: 0 0 1.3em 1.3em;
+  background-color: white;
+  height: 95%;
+  padding-block-start: 6em;
+  padding-inline-start: 1em;
+}
+
+nav li {
+  list-style-type: none;
+  padding: 10px 4px;
+  font-weight: 600;
+}
+
+nav li a {
+  text-decoration: none;
+  color: var(--arsenic);
+  font-size: 2.25rem;
+}
+
+.nav_line {
+  display: block;
+  border-bottom: 5px solid var(--maastricht-blue);
+  width: 100px;
+  position: relative;
+  bottom: -19em;
+  margin-inline: auto;
+  border-radius: 1em;
 }
 
 .hamburger_icon {
   width: fit-content;
+  cursor: pointer;
+  z-index: 2;
+  animation: moveInRight 2s ease-in-out;
+}
+
+.heading > a {
+  text-decoration: none;
+  color: var(--black-leather-jacket);
+  font-weight: 600;
+  font-size: 1.25rem;
 }
 
 h2 {
@@ -134,19 +171,27 @@ h2 {
   cursor: pointer;
 }
 
+.next_button > img {
+  border-radius: 50%;
+  padding: 1em;
+  border: 1px solid var(--platinum);
+  cursor: pointer;
+}
+
+.social_links > li a img {
+  transition: all 0.5s ease-in-out;
+}
+
+.social_links > li a img:hover {
+  transform: scale(1.5);
+}
+
 .next_button {
   appearance: none;
   background: none;
   width: 90%;
   border: none;
   outline: none;
-}
-
-.next_button > img {
-  border-radius: 50%;
-  padding: 1em;
-  border: 1px solid var(--platinum);
-  cursor: pointer;
 }
 
 .work_section {
@@ -219,7 +264,6 @@ h2 {
   color: var(--arsenic);
   text-align: center;
   list-style-type: none;
-  height: fit-content;
   font-style: normal;
   font-size: 0.75rem;
 }
@@ -234,7 +278,9 @@ h2 {
 }
 
 .about_me {
-  background: url('./img/illustration-1-about-me-mobile.svg') no-repeat 10px, url('./img/illustration-2-about-me-mobile.svg') no-repeat;
+  background:
+    url("./img/illustration-1-about-me-mobile.svg") no-repeat 10px,
+    url("./img/illustration-2-about-me-mobile.svg") no-repeat;
   background-position: top -30px right, bottom left;
   display: flex;
   flex-direction: column;
@@ -390,7 +436,7 @@ input {
 textarea {
   padding-block-start: 1em;
   height: 117px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 input:focus,
@@ -450,7 +496,10 @@ hr {
 
 @media (min-width: 768px) {
   body {
-    background-image: url('./img/illustration-1-contact-form-desktop.svg'), url('./img/illustration-2-contact-form-desktop.svg'), url('./img/contact-form-illustratoin-3-desktop.svg');
+    background-image:
+      url("./img/illustration-1-contact-form-desktop.svg"),
+      url("./img/illustration-2-contact-form-desktop.svg"),
+      url("./img/contact-form-illustratoin-3-desktop.svg");
     background-size: 100px;
     background-position: 0 95%, 20% 95%, 100% 95%;
   }
@@ -460,13 +509,21 @@ hr {
   }
 
   nav {
-    display: block;
+    visibility: visible;
+    position: static;
+    background: none;
+    width: 100%;
   }
 
   nav ul {
-    display: flex;
+    flex-direction: row;
+    background: none;
     gap: 8px;
-    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+    height: 100%;
+    padding-block-start: 0;
+    padding-inline-start: 0;
   }
 
   nav li {
@@ -481,8 +538,17 @@ hr {
     font-size: 0.938rem;
   }
 
+  .nav_line {
+    display: none;
+  }
+
+  .hamburger_icon {
+    width: fit-content;
+    cursor: pointer;
+  }
+
   main {
-    background: url('./img/header-llustration-desktop.svg') no-repeat center;
+    background: url("./img/header-llustration-desktop.svg") no-repeat center;
     background-position-y: 0;
     background-size: 1100px;
   }
@@ -574,7 +640,7 @@ hr {
   }
 
   main {
-    background: url('./img/header-llustration-desktop.svg') no-repeat center;
+    background: url("./img/header-llustration-desktop.svg") no-repeat center;
     background-size: 100%;
     background-position-y: 0;
   }
@@ -625,7 +691,9 @@ hr {
   }
 
   .about_me {
-    background: url('./img/illustration-about me-1-desktop.svg') no-repeat 10px, url('./img/illustration-about-me-2-desktop.svg') no-repeat;
+    background:
+      url("./img/illustration-about me-1-desktop.svg") no-repeat 10px,
+      url("./img/illustration-about-me-2-desktop.svg") no-repeat;
     background-position: top -50px right, bottom left;
   }
 
@@ -653,5 +721,29 @@ hr {
 
   .form_btn {
     align-self: flex-start;
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
