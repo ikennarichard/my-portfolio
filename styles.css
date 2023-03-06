@@ -6,6 +6,7 @@
   --mint: #36b37e;
   --crayola: #acb7c3;
   --platinum: #dfe1e6;
+  --light-platinum: #e5e5e5;
   --light-gray: #d0d9d4;
   --bright-gray: #ebf0ee;
   --arsenic: #3a4a42;
@@ -94,7 +95,35 @@ header {
 }
 
 nav {
-  display: none;
+  visibility: visible;
+  width: 100%;
+  height: 100%;
+  background-color: var(--light-platinum);
+  position: fixed;
+  z-index: 1;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  border-radius: 0 0 1.3em 1.3em;
+  background-color: white;
+  height: 93%;
+  padding-block-start: 6em;
+}
+
+nav li {
+  list-style-type: none;
+  padding: 10px 4px;
+  font-weight: 600;
+}
+
+nav li a {
+  text-decoration: none;
+  color: var(--police-blue);
+  font-size: 2.25rem;
 }
 
 .hamburger_icon {
@@ -460,7 +489,7 @@ hr {
   }
 
   nav {
-    display: block;
+    visibility: visible;
   }
 
   nav ul {
