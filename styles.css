@@ -102,7 +102,12 @@ nav {
   background-color: var(--light-platinum);
   position: fixed;
   z-index: 1;
-  transition: width 0.5s linear;
+  transition: visibility 0s ease-in-out, width 0.5s linear;
+}
+
+.show_menu {
+  visibility: visible;
+  width: 100%;
 }
 
 nav ul {
