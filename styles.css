@@ -33,6 +33,7 @@ body {
   background-image: url('./img/illustration-contact-form.svg');
   background-repeat: no-repeat;
   background-position: bottom 120px right;
+  position: relative;
 }
 
 main {
@@ -92,7 +93,7 @@ nav {
   width: 0%;
   height: 100%;
   background-color: var(--light-platinum);
-  position: fixed;
+  position: absolute;
   z-index: 1;
   transition: width 0.3s ease-in-out;
 }
@@ -109,7 +110,7 @@ nav ul {
   align-items: flex-start;
   border-radius: 0 0 1.3em 1.3em;
   background-color: white;
-  height: 93%;
+  height: 95%;
   padding-block-start: 6em;
   padding-inline-start: 1em;
 }
@@ -131,7 +132,7 @@ nav li a {
   border-bottom: 5px solid var(--maastricht-blue);
   width: 100px;
   position: relative;
-  bottom: -4em;
+  bottom: -19em;
   margin-inline: auto;
   border-radius: 1em;
 }
