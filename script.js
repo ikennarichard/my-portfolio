@@ -3,12 +3,17 @@ const navBar = document.querySelector('nav');
 const menuItems = [...document.querySelectorAll('nav li a')];
 
 menuBtn.addEventListener('click', displayMenu)
-menuItems.forEach(item => item.addEventListener('click', displayMenu))
+menuItems.forEach(item => item.addEventListener('click', displayMenuSection))
 
 function displayMenu() {
   if (window.innerWidth < 768)
   navBar.classList.toggle('show_menu');
   toggleMenuBtn()
+}
+
+function displayMenuSection() {
+  navBar.classList.remove('show_menu');
+  menuBtn.src = 'img/hamburger-icon.svg';
 }
 
 function toggleMenuBtn() {
@@ -17,7 +22,6 @@ function toggleMenuBtn() {
   } else {
     menuBtn.src = 'img/hamburger-icon.svg'
   }
-  menuBtn.style.zIndex = 2
 }
 
 

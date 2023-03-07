@@ -54,14 +54,6 @@ address > a {
 }
 
 @keyframes rotate {
-  50% {
-    transform: translate(-20px);
-  }
-
-  70% {
-    transform: translate(50px);
-  }
-
   100% {
     transform: translate(-50px);
   }
@@ -147,6 +139,7 @@ nav li a {
 .hamburger_icon {
   width: fit-content;
   cursor: pointer;
+  z-index: 2;
 }
 
 h2 {
