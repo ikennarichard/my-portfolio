@@ -80,7 +80,7 @@ nav {
   width: 0%;
   height: 100%;
   background-color: var(--light-platinum);
-  position: absolute;
+  position: fixed;
   z-index: 1;
   transition: width 0.3s ease-in-out;
 }
