@@ -6,6 +6,7 @@ menuBtn.addEventListener('click', displayMenu)
 menuItems.forEach(item => item.addEventListener('click', displayMenu))
 
 function displayMenu() {
+  if (window.innerWidth < 768)
   navBar.classList.toggle('show_menu');
   toggleMenuBtn()
 }

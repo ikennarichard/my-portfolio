@@ -102,7 +102,7 @@ nav {
   background-color: var(--light-platinum);
   position: fixed;
   z-index: 1;
-  transition: visibility 0s ease-in-out, width 0.5s linear;
+  transition: width 0.3s ease-in-out;
 }
 
 .show_menu {
@@ -130,7 +130,7 @@ nav li {
 
 nav li a {
   text-decoration: none;
-  color: var(--police-blue);
+  color: var(--arsenic);
   font-size: 2.25rem;
 }
 
@@ -509,12 +509,20 @@ hr {
 
   nav {
     visibility: visible;
+    position: static;
+    background: none;
+    width: 100%;
   }
 
   nav ul {
-    display: flex;
+    flex-direction: row;
+    background: none;
     gap: 8px;
-    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+    height: 100%;
+    padding-block-start: 0;
+    padding-inline-start: 0;
   }
 
   nav li {
@@ -527,6 +535,15 @@ hr {
     text-decoration: none;
     color: var(--police-blue);
     font-size: 0.938rem;
+  }
+  
+  .nav_line {
+    display: none
+  }
+
+  .hamburger_icon {
+    width: fit-content;
+    cursor: pointer;
   }
 
   main {
