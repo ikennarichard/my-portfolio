@@ -119,6 +119,7 @@ nav ul {
   background-color: white;
   height: 93%;
   padding-block-start: 6em;
+  padding-inline-start: 1em;
 }
 
 nav li {
