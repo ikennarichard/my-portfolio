@@ -219,25 +219,17 @@ const form = document.querySelector("form");
 const message = document.querySelector(".status");
 const formFields = [...form.elements];
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-
+function isLowerCase(value) {
   message.style.visibility = "visible";
 
-  const emailInput = form.elements.email.value;
-
-  const regx = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
-
-  if (regx.test(emailInput) === false) {
+  if (value.toLowerCase() === value) {
+    message.innerText = "Success";
+    message.style.color = "var(--mint)";
+  } else {
     message.innerText = "Please email must be lowercase";
     message.style.color = "#E31937";
-    return;
   }
-
-  message.innerText = "Success";
-  message.style.color = "var(--mint)";
-  form.submit();
-});
+}
 
 function removeMessage() {
   message.style.visibility = "hidden";
