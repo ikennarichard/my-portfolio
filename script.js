@@ -23,7 +23,6 @@ function displayMenuSection() {
 menuBtn.addEventListener('click', displayMenu);
 menuItems.forEach((item) => item.addEventListener('click', displayMenuSection));
 
-
 // function that returns the projects section
 
 const projectSection = document.querySelector('.work_section');
@@ -101,13 +100,12 @@ const projects = [
     mobile_image: './img/mobile-details-image.svg',
     desktop_image: './img/desktop-details-image.svg',
   },
-]
+];
 
 function createProjectsSection() {
-
-  for (let i =0; i < projects.length; i++) {
-    projectSection.innerHTML+= 
-    `
+  for (let i = 0; i < projects.length; i += 1) {
+    projectSection.innerHTML
+    += `
     <article class="card">
     <div class="project_image"></div>
     <div class="project_details">
@@ -120,21 +118,18 @@ function createProjectsSection() {
       </ul>
       <a href ="#" class="see_project" onclick=displayDetails(${i})>See Project</a>
     </div>
-  </article>`
+  </article>`;
   }
 }
 
-window.addEventListener('load', createProjectsSection)
+window.addEventListener('load', createProjectsSection);
 
-
-// implement the details modal
 const detailsModal = document.querySelector('.details_section');
-
+// eslint-disable-next-line
 function displayDetails(id) {
-  detailsModal.style.display = 'block'
+  detailsModal.style.display = 'block';
 
-  detailsModal.innerHTML =
-    `<div class='overlay'>
+  detailsModal.innerHTML = `<div class='overlay'>
     
         <div class='details_modal'>
         <img src='./img/cancel-icon.svg' class='details_cancel' onclick=removeModal() />
@@ -145,10 +140,10 @@ function displayDetails(id) {
       
           <h2>${projects[id].name}</h2>
           <ul class="project_stack mobile_tech">
-          ${projects[id].technologies_mobile.map(item => `<li>${item}</li>`).join('')}
+          ${projects[id].technologies_mobile.map((item) => `<li>${item}</li>`).join('')}
           </ul>
           <ul class="project_stack desktop_tech">
-          ${projects[id].technologies_desktop.map(item => `<li>${item}</li>`).join('')}
+          ${projects[id].technologies_desktop.map((item) => `<li>${item}</li>`).join('')}
           </ul>
           <p class="description">${projects[id].description}</p>
           <div class='details_icons'>
@@ -157,11 +152,9 @@ function displayDetails(id) {
           </div>
         </div>
     </div>
-    `
+    `;
 }
-
+// eslint-disable-next-line
 function removeModal() {
   detailsModal.style.display = 'none';
 }
-
-
