@@ -1,0 +1,19 @@
+:root {
+  --lavendar-gray: #c1c7d0;
+}
+
+.overlay {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+  background-color: var(--lavendar-gray); 
+}
+
+@media (min-width: 768px) {
+  .mobile_tech {
+    display: none;
+  }
+}
