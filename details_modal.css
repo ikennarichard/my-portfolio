@@ -1,5 +1,6 @@
 :root {
   --lavendar-gray: #c1c7d0;
+  --bright-gray: #ebecf0;
 }
 
 .overlay {
@@ -32,6 +33,10 @@
     padding-inline: 10px;
     padding-bottom: 25px;
     position: relative;
+  }
+
+  .details_cancel {
+    color: var(--bright-gray);
   }
 
   .details_modal h2 {

@@ -118,7 +118,7 @@ function createProjectsSection() {
       <li>Javascript</li>
       <li>html</li>
       </ul>
-      <a href ="#/" class="see_project" onclick=displayDetails(${i})>See Project</a>
+      <a href ="#" class="see_project" onclick=displayDetails(${i})>See Project</a>
     </div>
   </article>`
   }
