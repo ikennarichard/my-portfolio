@@ -11,7 +11,9 @@ function toggleMenuBtn() {
 }
 
 function displayMenu() {
-  if (window.innerWidth < 768) { navBar.classList.toggle('show_menu'); }
+  if (window.innerWidth < 768) {
+    navBar.classList.toggle('show_menu');
+  }
   menuBtn.classList.toggle('change_position');
   toggleMenuBtn();
 }
@@ -29,11 +31,19 @@ const projectSection = document.querySelector('.work_section');
 const projects = [
   {
     name: 'Keeping track of hundreds of components',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     see_live_icon: './icons/see-live-icon.svg',
     github_icon: './icons/details-github-icon.svg',
     technologies_mobile: ['Ruby on rails', 'css', 'Javascript', 'html'],
-    technologies_desktop: ['Codekit', 'Github', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
+    technologies_desktop: [
+      'Codekit',
+      'Github',
+      'JavaScript',
+      'Bootstrap',
+      'Terminal',
+      'Codepen',
+    ],
     live_source: '#',
     live_link: '#',
     mobile_image: './img/mobile-details-image.svg',
@@ -41,11 +51,19 @@ const projects = [
   },
   {
     name: 'Keeping track of hundreds of components',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     see_live_icon: './icons/see-live-icon.svg',
     github_icon: './icons/details-github-icon.svg',
     technologies_mobile: ['Ruby on rails', 'css', 'Javascript', 'html'],
-    technologies_desktop: ['Codekit', 'Github', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
+    technologies_desktop: [
+      'Codekit',
+      'Github',
+      'JavaScript',
+      'Bootstrap',
+      'Terminal',
+      'Codepen',
+    ],
     live_source: '#',
     live_link: '#',
     mobile_image: './img/mobile-details-image.svg',
@@ -53,11 +71,19 @@ const projects = [
   },
   {
     name: 'Keeping track of hundreds of components',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     see_live_icon: './icons/see-live-icon.svg',
     github_icon: './icons/details-github-icon.svg',
     technologies_mobile: ['Ruby on rails', 'css', 'Javascript', 'html'],
-    technologies_desktop: ['Codekit', 'Github', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
+    technologies_desktop: [
+      'Codekit',
+      'Github',
+      'JavaScript',
+      'Bootstrap',
+      'Terminal',
+      'Codepen',
+    ],
     live_source: '#',
     live_link: '#',
     mobile_image: './img/mobile-details-image.svg',
@@ -65,11 +91,19 @@ const projects = [
   },
   {
     name: 'Keeping track of hundreds of components',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     see_live_icon: './icons/see-live-icon.svg',
     github_icon: './icons/details-github-icon.svg',
     technologies_mobile: ['Ruby on rails', 'css', 'Javascript', 'html'],
-    technologies_desktop: ['Codekit', 'Github', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
+    technologies_desktop: [
+      'Codekit',
+      'Github',
+      'JavaScript',
+      'Bootstrap',
+      'Terminal',
+      'Codepen',
+    ],
     live_source: '#',
     live_link: '#',
     mobile_image: './img/mobile-details-image.svg',
@@ -77,11 +111,19 @@ const projects = [
   },
   {
     name: 'Keeping track of hundreds of components',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     see_live_icon: './icons/see-live-icon.svg',
     github_icon: './icons/details-github-icon.svg',
     technologies_mobile: ['Ruby on rails', 'css', 'Javascript', 'html'],
-    technologies_desktop: ['Codekit', 'Github', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
+    technologies_desktop: [
+      'Codekit',
+      'Github',
+      'JavaScript',
+      'Bootstrap',
+      'Terminal',
+      'Codepen',
+    ],
     live_source: '#',
     live_link: '#',
     mobile_image: './img/mobile-details-image.svg',
@@ -89,11 +131,19 @@ const projects = [
   },
   {
     name: 'Keeping track of hundreds of components',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     see_live_icon: './icons/see-live-icon.svg',
     github_icon: './icons/details-github-icon.svg',
     technologies_mobile: ['Ruby on rails', 'css', 'Javascript', 'html'],
-    technologies_desktop: ['Codekit', 'Github', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
+    technologies_desktop: [
+      'Codekit',
+      'Github',
+      'JavaScript',
+      'Bootstrap',
+      'Terminal',
+      'Codepen',
+    ],
     live_source: '#',
     live_link: '#',
     mobile_image: './img/mobile-details-image.svg',
@@ -103,8 +153,7 @@ const projects = [
 
 function createProjectsSection() {
   for (let i = 0; i < projects.length; i += 1) {
-    projectSection.innerHTML
-    += `
+    projectSection.innerHTML += `
     <article class="card">
     <div class="project_image"></div>
     <div class="project_details">
@@ -139,21 +188,60 @@ function displayDetailsModal(id) {
       
           <h2>${projects[id].name}</h2>
           <ul class="project_stack mobile_tech">
-          ${projects[id].technologies_mobile.map((item) => `<li>${item}</li>`).join('')}
+          ${projects[id].technologies_mobile
+    .map((item) => `<li>${item}</li>`)
+    .join('')}
           </ul>
           <ul class="project_stack desktop_tech">
-          ${projects[id].technologies_desktop.map((item) => `<li>${item}</li>`).join('')}
+          ${projects[id].technologies_desktop
+    .map((item) => `<li>${item}</li>`)
+    .join('')}
           </ul>
           <p class="description">${projects[id].description}</p>
           <div class='details_icons'>
-            <a href='#/'class='see_live'>See live <img src="${projects[id].see_live_icon}" class='see_live'/></a>
-            <a href='#/'class='github_details'>See Source <img src="${projects[id].github_icon}" class='github'/></a>
+            <a href='#/'class='see_live'>See live <img src="${
+  projects[id].see_live_icon
+}" class='see_live'/></a>
+            <a href='#/'class='github_details'>See Source <img src="${
+  projects[id].github_icon
+}" class='github'/></a>
           </div>
         </div>
     </div>
     `;
+  const removeModal = document.querySelector('.details_cancel');
+  removeModal.addEventListener('click', () => {
+    detailsModal.style.display = 'none';
+  });
 }
-// eslint-disable-next-line
-function removeModal() {
-  detailsModal.style.display = 'none';
+
+const form = document.querySelector('form');
+const message = document.querySelector('.status');
+const formFields = [...form.elements];
+
+function validate(e) {
+  e.preventDefault();
+
+  message.style.visibility = 'visible';
+  const emailInput = form.elements.email.value;
+
+  const regx = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
+
+  if (regx.test(emailInput) === false) {
+    message.innerText = 'Please email must be lowercase';
+    message.style.color = '#E31937';
+    return;
+  }
+
+  message.innerText = 'Success';
+  message.style.color = 'var(--mint)';
+  form.submit();
 }
+
+function removeMessage() {
+  message.style.visibility = 'hidden';
+}
+
+formFields.forEach((field) => field.addEventListener('focus', removeMessage));
+
+form.addEventListener('submit', (e) => validate(e));
