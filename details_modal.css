@@ -42,11 +42,15 @@
     line-height: 1.3;
   }
 
+  .details_modal .description {
+    padding-top: 2em;
+  }
+
   .details_icons {
     display: flex;
     gap: 10px;
     position: absolute;
-    top: 490px;
+    top: 460px;
     bottom: 0;
     right: 10px;
   }
@@ -71,6 +75,7 @@
   }
 
   .mobile_tech, .desktop_tech {
+    padding-top: 1em;
     align-self: flex-start;
   }
 }

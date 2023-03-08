@@ -142,12 +142,12 @@ projectSection.innerHTML +=
       
       <h2>${projects[id].name}</h2>
 
-      <ul class="project_stack mobile_tech">
-      ${projects[id].technologies_mobile.map(item => `<li>${item}</>`)}
+      <ul class=" mobile_tech">
+      ${projects[id].technologies_mobile.map(item => `<li>${item}</li>`).join('')}
       </ul>
 
       <ul class="project_stack desktop_tech">
-      ${projects[id].technologies_desktop.map(item => `<li>${item}</>`)}
+      ${projects[id].technologies_desktop.map(item => `<li>${item}</li>`).join('')}
       </ul>
 
       <p class="description">${projects[id].description}</p>
