@@ -12,18 +12,17 @@ function toggleMenuBtn() {
 
 function displayMenu() {
   if (window.innerWidth < 768) { navBar.classList.toggle('show_menu'); }
+  menuBtn.classList.toggle('change_position');
   toggleMenuBtn();
 }
 
-function displayMenuSection() {
+function displayMenuItems() {
   navBar.classList.remove('show_menu');
   menuBtn.src = 'img/hamburger-icon.svg';
 }
 
 menuBtn.addEventListener('click', displayMenu);
-menuItems.forEach((item) => item.addEventListener('click', displayMenuSection));
-
-// function that returns the projects section
+menuItems.forEach((item) => item.addEventListener('click', displayMenuItems));
 
 const projectSection = document.querySelector('.work_section');
 
@@ -116,7 +115,7 @@ function createProjectsSection() {
       <li>Javascript</li>
       <li>html</li>
       </ul>
-      <a href ="#" class="see_project" onclick=displayDetails(${i})>See Project</a>
+      <a href ="#" class="see_project" onclick=displayDetailsModal(${i})>See Project</a>
     </div>
   </article>`;
   }
@@ -126,16 +125,16 @@ window.addEventListener('load', createProjectsSection);
 
 const detailsModal = document.querySelector('.details_section');
 // eslint-disable-next-line
-function displayDetails(id) {
+function displayDetailsModal(id) {
   detailsModal.style.display = 'block';
 
-  detailsModal.innerHTML = `<div class='overlay'>
-    
+  detailsModal.innerHTML = `
+  <div class='overlay'>
         <div class='details_modal'>
         <img src='./img/cancel-icon.svg' class='details_cancel' onclick=removeModal() />
           <div class='details_image'>
-          <img src="${projects[id].mobile_image}" class='mobile_image'/>
-          <img src="${projects[id].desktop_image}" class='desktop_image'/>
+            <img src="${projects[id].mobile_image}" class='mobile_image'/>
+            <img src="${projects[id].desktop_image}" class='desktop_image'/>
           </div>
       
           <h2>${projects[id].name}</h2>

@@ -74,6 +74,11 @@ header {
   margin-top: 15px;
 }
 
+.change_position {
+  position: fixed;
+  right: 100px;
+}
+
 nav {
   visibility: visible;
   overflow: hidden;
