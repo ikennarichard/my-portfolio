@@ -133,13 +133,13 @@ projectSection.innerHTML +=
   `
   <div class='overlay'>
     <div class='details_modal'>
-
+      <img src="./img/cancel-icon.svg" class='details_cancel'/>
       <div class='details_image'>
       <img src="${projects[id].mobile_image}" class='mobile_image'/>
       <img src="${projects[id].desktop_image}" class='desktop_image'/>
       </div>
 
-      <img src="./img/cancel-icon.svg"/>
+      
       <h2>${projects[id].name}</h2>
 
       <ul class="project_stack mobile_tech">
@@ -152,9 +152,10 @@ projectSection.innerHTML +=
 
       <p class="description">${projects[id].description}</p>
 
-      <a href='#/' class='see_live see_projects'>See live <img src="${projects[id].see_live_icon}"/></a>
-
-      <a href='#/' class='github_details see_projects'>See Source <img src="${projects[id].github_icon}"/></a>
+      <div class='details_icons'>
+        <a href='#/'class='see_live'>See live <img src="${projects[id].see_live_icon}" class='see_live'/></a>
+        <a href='#/'class='github_details'>See Source <img src="${projects[id].github_icon}" class='github'/></a>
+      </div>
     </div>
   <div>
   `
