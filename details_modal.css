@@ -1,6 +1,7 @@
 :root {
   --lavendar-gray: #c1c7d0;
   --bright-gray: #ebecf0;
+  --neutral-blue: #635234;
 }
 
 .overlay {
@@ -11,6 +12,15 @@
   width: 100%;
   z-index: 5;
   background-color: var(--lavendar-gray); 
+}
+
+.description {
+  color: var(--police-blue);
+  line-height: 1.5;
+}
+
+.desktop_tech, .desktop_image {
+  display: none;
 }
 
 @media (min-width: 768px) {
@@ -33,10 +43,16 @@
     padding-inline: 10px;
     padding-bottom: 25px;
     position: relative;
+    padding-top: 15px;
+    border-radius: 5px;
   }
 
   .details_cancel {
-    color: var(--bright-gray);
+    background-color: var(--bright-gray);
+    padding: 6px;
+    border-radius: 5px;
+    align-self: flex-end;
+    margin-bottom: 6px;
   }
 
   .details_modal h2 {

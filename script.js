@@ -118,7 +118,7 @@ function createProjectsSection() {
       <li>Javascript</li>
       <li>html</li>
       </ul>
-      <a href ="#" class="see_project" onclick=displayDetails(${i})>See Project</a>
+      <a href ="#/" class="see_project" onclick=displayDetails(${i})>See Project</a>
     </div>
   </article>`
   }
@@ -133,7 +133,7 @@ projectSection.innerHTML +=
   `
   <div class='overlay'>
     <div class='details_modal'>
-      <img src="./img/cancel-icon.svg" class='details_cancel'/>
+      <img src="./img/cancel-icon.svg" class='details_cancel' onclick=closeModal()/>
       <div class='details_image'>
       <img src="${projects[id].mobile_image}" class='mobile_image'/>
       <img src="${projects[id].desktop_image}" class='desktop_image'/>
@@ -142,7 +142,7 @@ projectSection.innerHTML +=
       
       <h2>${projects[id].name}</h2>
 
-      <ul class=" mobile_tech">
+      <ul class="project_stack mobile_tech">
       ${projects[id].technologies_mobile.map(item => `<li>${item}</li>`).join('')}
       </ul>
 
