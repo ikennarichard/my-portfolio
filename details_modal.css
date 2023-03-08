@@ -83,6 +83,11 @@
   justify-content: center;
   border-radius: 4px;
   width: 141px;
+  transition: all 0.3s ease-in-out;
+}
+
+.details_icons > a:hover {
+  transform: scale(1.05);
 }
 
 .details_icons > a > img {
