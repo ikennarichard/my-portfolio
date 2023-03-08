@@ -38,6 +38,11 @@
   position: relative;
 }
 
+.details_section {
+  display: absolute;
+  width: 100%;
+}
+
 .details_modal h2 {
   font-size: 2rem;
   width: 75%;
@@ -87,9 +92,13 @@
   width: 1px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .mobile_tech, .mobile_image {
     display: none;
+  }
+
+  .desktop_tech, .desktop_image {
+    display: block;
   }
 
   .overlay {
@@ -98,14 +107,14 @@
   }
 
   .details_cancel {
+    filter: none;
+    position: static;
     background-color: var(--bright-gray);
     padding: 6px;
     border-radius: 5px;
     align-self: flex-end;
     margin-bottom: 6px;
     padding: 6px;
-    align-self: flex-end;
-    margin-bottom: 6px;
   }
 
   .details_modal h2 {

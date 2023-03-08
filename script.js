@@ -118,48 +118,50 @@ function createProjectsSection() {
       <li>Javascript</li>
       <li>html</li>
       </ul>
-      <a href ="#/" class="see_project" onclick=displayDetails(${i})>See Project</a>
+      <a href ="#" class="see_project" onclick=displayDetails(${i})>See Project</a>
     </div>
   </article>`
   }
 }
 
+window.addEventListener('load', createProjectsSection)
+
 
 // implement the details modal
+const detailsModal = document.querySelector('.details_section');
 
 function displayDetails(id) {
+  detailsModal.style.display = 'block'
 
-projectSection.innerHTML +=
-  `
-  <div class='overlay'>
-    <div class='details_modal'>
-      <img src="./img/cancel-icon.svg" class='details_cancel' onclick=closeModal()/>
-      <div class='details_image'>
-      <img src="${projects[id].mobile_image}" class='mobile_image'/>
-      <img src="${projects[id].desktop_image}" class='desktop_image'/>
-      </div>
-
+  detailsModal.innerHTML =
+    `<div class='overlay'>
+    
+        <div class='details_modal'>
+        <img src='./img/cancel-icon.svg' class='details_cancel' onclick=removeModal() />
+          <div class='details_image'>
+          <img src="${projects[id].mobile_image}" class='mobile_image'/>
+          <img src="${projects[id].desktop_image}" class='desktop_image'/>
+          </div>
       
-      <h2>${projects[id].name}</h2>
-
-      <ul class="project_stack mobile_tech">
-      ${projects[id].technologies_mobile.map(item => `<li>${item}</li>`).join('')}
-      </ul>
-
-      <ul class="project_stack desktop_tech">
-      ${projects[id].technologies_desktop.map(item => `<li>${item}</li>`).join('')}
-      </ul>
-
-      <p class="description">${projects[id].description}</p>
-
-      <div class='details_icons'>
-        <a href='#/'class='see_live'>See live <img src="${projects[id].see_live_icon}" class='see_live'/></a>
-        <a href='#/'class='github_details'>See Source <img src="${projects[id].github_icon}" class='github'/></a>
-      </div>
+          <h2>${projects[id].name}</h2>
+          <ul class="project_stack mobile_tech">
+          ${projects[id].technologies_mobile.map(item => `<li>${item}</li>`).join('')}
+          </ul>
+          <ul class="project_stack desktop_tech">
+          ${projects[id].technologies_desktop.map(item => `<li>${item}</li>`).join('')}
+          </ul>
+          <p class="description">${projects[id].description}</p>
+          <div class='details_icons'>
+            <a href='#/'class='see_live'>See live <img src="${projects[id].see_live_icon}" class='see_live'/></a>
+            <a href='#/'class='github_details'>See Source <img src="${projects[id].github_icon}" class='github'/></a>
+          </div>
+        </div>
     </div>
-  <div>
-  `
+    `
+}
+
+function removeModal() {
+  detailsModal.style.display = 'none';
 }
 
 
-window.addEventListener('load', createProjectsSection)
