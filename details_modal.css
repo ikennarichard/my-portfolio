@@ -7,6 +7,8 @@
 .overlay {
   top: 0;
   bottom: 0;
+  right: 0;
+  left: 0;
   position: absolute;
   width: 100%;
   z-index: 5;
@@ -35,7 +37,6 @@
   position: relative;
   padding-top: 15px;
   border-radius: 5px;
-  position: relative;
 }
 
 .details_section {
@@ -92,17 +93,16 @@
   width: 1px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 915px) {
   .mobile_tech, .mobile_image {
     display: none;
   }
 
   .desktop_tech, .desktop_image {
-    display: block;
+    display: flex;
   }
 
   .overlay {
-    filter: opacity(0.98);
     padding-top: 30px;
   }
 
