@@ -173,7 +173,7 @@ function createProjectsSection() {
 window.addEventListener('load', createProjectsSection);
 
 const detailsModal = document.querySelector('.details_section');
-// eslint-disable-next-line
+
 function displayDetailsModal(id) {
   detailsModal.style.display = 'block';
 
@@ -211,7 +211,7 @@ function displayDetailsModal(id) {
     `;
 }
 
-function removeModal() { // eslint-disable-line no-unused-vars
+function removeModal() {
   detailsModal.style.display = 'none';
 }
 
