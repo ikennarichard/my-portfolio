@@ -470,7 +470,7 @@ textarea:focus {
 .form_btn:hover {
   filter: drop-shadow(0 2px 2px var(--maastricht-blue));
   background-color: var(--bright-gray);
-  color: var(--maastricht-blue);
+  color: var(--spanish-viridian);
 }
 
 .form_btn:active {

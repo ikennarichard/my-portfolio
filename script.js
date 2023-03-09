@@ -245,3 +245,21 @@ function removeMessage() {
 formFields.forEach((field) => field.addEventListener('focus', removeMessage));
 
 form.addEventListener('submit', (e) => validate(e));
+
+const inputFields = { name: '', email: '', message: '' };
+
+formFields.forEach((field) => field.addEventListener('input', () => {
+  inputFields.name = form.elements.fullname.value;
+  inputFields.email = form.elements.email.value;
+  inputFields.message = form.elements.message.value;
+  localStorage.setItem('details', JSON.stringify(inputFields));
+}));
+
+function getDetails() {
+  const details = localStorage.getItem('details');
+  const items = JSON.parse(details);
+  form.elements.fullname.value = items.name;
+  form.elements.email.value = items.email;
+  form.elements.message.value = items.message;
+}
+getDetails();
