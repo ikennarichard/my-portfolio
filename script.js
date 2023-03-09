@@ -173,7 +173,7 @@ function createProjectsSection() {
 window.addEventListener('load', createProjectsSection);
 
 const detailsModal = document.querySelector('.details_section');
-
+/* eslint no-unused-vars: "off" */
 function displayDetailsModal(id) {
   detailsModal.style.display = 'block';
 
