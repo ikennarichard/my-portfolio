@@ -480,6 +480,7 @@ textarea:focus {
 
 .status {
   height: 50px;
+  font-size: 1rem;
 }
 
 footer {
