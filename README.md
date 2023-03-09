@@ -40,6 +40,7 @@ Hello welcome to my **[Portfolio]**, here you'll find details about me and some 
   <ul>
     <li><a href="#">HTML</a></li>
     <li><a href="#">CSS</a></li>
+    <li><a href="#">JavaScript</a></li>
   </ul>
 </details>
 
