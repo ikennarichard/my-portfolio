@@ -173,7 +173,7 @@ function createProjectsSection() {
 window.addEventListener('load', createProjectsSection);
 
 const detailsModal = document.querySelector('.details_section');
-/* eslint no-unused-vars: "off" */
+// eslint-disable-next-line
 function displayDetailsModal(id) {
   detailsModal.style.display = 'block';
 
@@ -209,10 +209,10 @@ function displayDetailsModal(id) {
         </div>
     </div>
     `;
-}
-
-function removeModal() {
-  detailsModal.style.display = 'none';
+  const removeModal = document.querySelector('.details_cancel');
+  removeModal.addEventListener('click', () => {
+    detailsModal.style.display = 'none';
+  });
 }
 
 const form = document.querySelector('form');
