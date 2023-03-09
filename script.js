@@ -210,8 +210,8 @@ function displayDetailsModal(id) {
     </div>
     `;
 }
-// eslint-disable-next-line
-function removeModal() {
+
+function removeModal() { // eslint-disable-line no-unused-vars
   detailsModal.style.display = 'none';
 }
 
