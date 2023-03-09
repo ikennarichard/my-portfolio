@@ -478,6 +478,10 @@ textarea:focus {
   filter: none;
 }
 
+.status {
+  height: 50px;
+}
+
 footer {
   margin-block-start: 2.5em;
   display: flex;

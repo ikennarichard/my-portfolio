@@ -157,3 +157,36 @@ function displayDetailsModal(id) {
 function removeModal() {
   detailsModal.style.display = 'none';
 }
+
+// add form validation
+const form = document.querySelector('form');
+const emailElem = document.querySelector('#email');
+const message = document.querySelector('.status');
+const formFields = [...form.elements];
+
+formFields.forEach(field => field.addEventListener('focus', removeMessage))
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  const emailInput = form.elements['email'].value
+  
+  isLowerCase(emailInput)
+})
+
+ function isLowerCase (value) {
+  
+  message.style.visibility = 'visible';
+
+  if (value.toLowerCase() === value) {
+    message.innerText = 'Success';
+    message.style.color = 'var(--mint)';
+  } else {
+    message.innerText = 'Please email must be lowercase',
+    message.style.color = '#E31937'; 
+  }
+ }
+
+function removeMessage() {
+  message.style.visibility = 'hidden';
+}
