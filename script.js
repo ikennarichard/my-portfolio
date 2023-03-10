@@ -257,7 +257,7 @@ submitBtn.addEventListener('click', () => {
 });
 
 function getDetails() {
-  const details = localStorage.getItem('styles');
+  const details = localStorage.getItem('details');
   const items = JSON.parse(details);
   form.elements.fullname.value = items.name;
   form.elements.email.value = items.email;
