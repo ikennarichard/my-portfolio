@@ -246,15 +246,14 @@ formFields.forEach((field) => field.addEventListener('focus', removeMessage));
 
 form.addEventListener('submit', (e) => validate(e));
 
-const submitBtn = document.querySelector('.form_btn');
 const inputFields = { name: '', email: '', message: '' };
 
-submitBtn.addEventListener('click', () => {
+formFields.forEach((field) => field.addEventListener('input', () => {
   inputFields.name = form.elements.fullname.value;
   inputFields.email = form.elements.email.value;
   inputFields.message = form.elements.message.value;
   localStorage.setItem('details', JSON.stringify(inputFields));
-});
+}));
 
 function getDetails() {
   const details = localStorage.getItem('details');
