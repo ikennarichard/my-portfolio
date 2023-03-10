@@ -245,3 +245,22 @@ function removeMessage() {
 formFields.forEach((field) => field.addEventListener('focus', removeMessage));
 
 form.addEventListener('submit', (e) => validate(e));
+
+const submitBtn = document.querySelector('.form_btn');
+const inputFields = { name: '', email: '', message: '' };
+
+submitBtn.addEventListener('click', () => {
+  inputFields.name = form.elements.fullname.value;
+  inputFields.email = form.elements.email.value;
+  inputFields.message = form.elements.message.value;
+  localStorage.setItem('details', JSON.stringify(inputFields));
+});
+
+function getDetails() {
+  const details = localStorage.getItem('styles');
+  const items = JSON.parse(details);
+  form.elements.fullname.value = items.name;
+  form.elements.email.value = items.email;
+  form.elements.message.value = items.message;
+}
+getDetails();
