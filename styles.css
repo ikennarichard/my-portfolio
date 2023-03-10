@@ -283,7 +283,8 @@ h2 {
 }
 
 .about_me {
-  background: url("./img/illustration-1-about-me-mobile.svg") no-repeat 10px,
+  background:
+    url("./img/illustration-1-about-me-mobile.svg") no-repeat 10px,
     url("./img/illustration-2-about-me-mobile.svg") no-repeat;
   background-position: top -30px right, bottom left;
   display: flex;
@@ -505,7 +506,8 @@ hr {
 
 @media (min-width: 768px) {
   body {
-    background-image: url("./img/illustration-1-contact-form-desktop.svg"),
+    background-image:
+      url("./img/illustration-1-contact-form-desktop.svg"),
       url("./img/illustration-2-contact-form-desktop.svg"),
       url("./img/contact-form-illustratoin-3-desktop.svg");
     background-size: 100px;
@@ -699,7 +701,8 @@ hr {
   }
 
   .about_me {
-    background: url("./img/illustration-about me-1-desktop.svg") no-repeat 10px,
+    background:
+      url("./img/illustration-about me-1-desktop.svg") no-repeat 10px,
       url("./img/illustration-about-me-2-desktop.svg") no-repeat;
     background-position: top -50px right, bottom left;
   }
