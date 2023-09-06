@@ -558,7 +558,7 @@ hr {
   }
 
   main {
-    background: url("./img/header-llustration-desktop.svg") no-repeat center;
+    background: url("./img/header-llustration-desktop.svg") repeat-y center;
     background-position-y: 0;
     background-size: 1100px;
   }
