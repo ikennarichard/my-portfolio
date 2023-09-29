@@ -60,8 +60,8 @@ Hello welcome to my **[Portfolio]**, here you'll find details about me and some 
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-If you prefer to see the finished version of the project visit the [live site](https://ikennarichard.github.io/my-portfolio/)
-[Figma - Template 3](https://www.figma.com/file/VUuAt4FtNiPNwTcybzQvGY/Microverse-Student-Project-1-(Copy)?type=design&node-id=1-468&mode=design&t=TNdVUJtRbqTGW6EF-0)
+- If you prefer to see the finished version of the project visit the [live site](https://ikennarichard.github.io/my-portfolio/)
+- [Figma - Template 3](https://www.figma.com/file/VUuAt4FtNiPNwTcybzQvGY/Microverse-Student-Project-1-(Copy)?type=design&node-id=1-468&mode=design&t=TNdVUJtRbqTGW6EF-0)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
